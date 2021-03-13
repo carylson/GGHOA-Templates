@@ -2,7 +2,7 @@
 	"responsive": true,
 	"glyph-icons": true,
 	"enableEditorJS": true,
-	"description": "Unite is a classic with some impressive accessories. Always in style, Unite delivers subtle, yet impressive design elements with neutral backgrounds that set the tone for a range of beautiful website building options.",
+	"description": "",
 	"features": [
 		"responsive",
 		"css-buttons",
@@ -49,7 +49,7 @@
             "name" : "full-width",
             "title": "Full Width",
             "type" : "toggle",
-            "default" : false,
+            "default" : true,
 			"is-body-class" : true,
 			"is-less-var" : false
         }
