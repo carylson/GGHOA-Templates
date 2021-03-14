@@ -353,10 +353,16 @@ body.full-width-off #navigation:after {
   width: 100%;
 }
 
-.wsite-header-section,
-.wsite-background {
-  background-image: url(images/default_header.jpg);
-  background-position: center center;
+.header-page .wsite-header-section {
+  background: url(images/bg-tall.png) no-repeat center center;
+  background-size: 2000px 550px;
+  height: 550px;
+}
+
+.header-page.short-header-page .wsite-header-section {
+  background: url(images/bg-short.png) no-repeat center center;
+  background-size: 2000px 250px;
+  height: 250px;
 }
 
 .wsite-header-section:before,
@@ -420,58 +426,12 @@ body.full-width-off #navigation:after {
 /* Page type: Header page
 --------------------------------------------------------------------------------*/
 
-.header-page  .wsite-header-section {
-  height: 460px;
-}
-
-/* Page type: Splash page
---------------------------------------------------------------------------------*/
-
-body.splash-page, .splash-page .body-wrap, .splash-page {
-  width: 100%;
-  height: 100%;
-  display: table;
-}
-
-.splash-page .spacer {
-  height: 16%;
-}
-
-.splash-page #banner {
-  height: 100%;
-}
-
-.splash-page #wrapper {
-  height: 100%;
-  width: 100%;
-  border-spacing: 0;
-}
-
-.splash-page #wrapper td {
-  padding: 0;
-}
-
-.splash-page #header, .splash-page #footer {
-  padding-top: 25px;
-  background: @background;
-  border: none !important;
-}
-
-.splash-page #navigation, .splash-page #footer {
-  padding-bottom: 25px;
-}
-
-.splash-page #footer-content {
-  display: none;
-}
-
 /* Page type: No Header page
 --------------------------------------------------------------------------------*/
 
 body.no-header #navigation {
   padding-bottom: 0;
 }
-
 
 /* Product Element
 --------------------------------------------------------------------------------*/
@@ -857,6 +817,16 @@ select::-ms-expand {
     line-height:1.5em!important;
   }
 
+  .header-page .wsite-header-section {
+    background-size: 1000px 275px;
+    height: 275px;
+  }
+
+  .header-page.short-header-page .wsite-header-section {
+    background-size: 1000px 125px;
+    height: 125px;
+  }
+
 /*  Nav */
 
   .navmobile-wrapper {
@@ -1042,9 +1012,6 @@ select::-ms-expand {
   body.wsite-checkout-page #header {
     position: absolute;
   }
-  .splash-page #header {
-    padding-top: 0;
-  }
   #sitename{
     margin:0 60px;
     vertical-align:middle;
@@ -1092,10 +1059,6 @@ select::-ms-expand {
 
   .banner-wrap .button-wrap > div:before {
     padding-top: 35px;
-  }
-
-  .splash-page .spacer {
-    height: 0;
   }
 
 /*  Blog */
