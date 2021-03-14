@@ -14,13 +14,13 @@
     ],
     "variations": [
         {
-            "value": "gray",
-            "sample": "#bbbbbb",
+            "value": "red",
+            "sample": "#f64c3f",
             "is-dark": false
         },
         {
-            "value": "red",
-            "sample": "#f64c3f",
+            "value": "gray",
+            "sample": "#bbbbbb",
             "is-dark": false
         }
     ],
