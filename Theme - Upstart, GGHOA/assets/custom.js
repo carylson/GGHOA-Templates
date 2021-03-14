@@ -71,13 +71,14 @@ jQuery(function($) {
         $('body').toggleClass('nav-open');
       });
 
+      /*
       // Pad header on mobile
-
       setTimeout(function(){
         if($(window).width() < 992) {
           $(".banner-wrap").css({"padding-top" : $(".header-wrap > .nav-wrap").height() + "px"});
         }
       }, 800);
+      */
 
       // Copy login and search to mobile nav
   		var login = $("#member-login").clone(true),
