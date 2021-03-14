@@ -12,9 +12,13 @@
         "color-palettes"
     ],
     "color-support": {
-            "primary": "#C8AE79"
+            "primary": "#f64c3f"
     },
     "color-presets": [
+        {
+            "variation": "red",
+            "primary": "#f64c3f"
+        },
         {
             "variation": "gold",
             "primary": "#C8AE79"
