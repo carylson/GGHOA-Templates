@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
-<body class="header-page short-header-page">
+<body class="slideshow-header-page">
     <div class="body-wrap">
+
         <div id="header">
             <div class="nav-trigger hamburger">
                 <div class="open-btn">
@@ -20,31 +21,29 @@
 
         <div id="wrapper">
             <div class="bg-wrapper">
+
                 <div id="navigation">{menu}</div>
 
-                <div class="banner-wrap">
-                    {{#header}}
-                        <div id="banner">
-                            <div id="banner-container">{content}</div>
-                        </div>
-                    {{/header}}
-                </div>
+                <div class="slideshow-wrapper">{slideshow}</div>
 
                 <div id="content-wrapper">
                     {{#sections}}
                         <div class="container">{content}</div>
                     {{/sections}}
                 </div>
+
             </div>
 
             <div id="footer">
                 <div id="footer-content">{footer}</div>
             </div>
+
         </div>
 
         <div class="navmobile-wrapper">
             <div id="navmobile" class="nav">{menu}</div>
         </div>
+
     </div>
 
 <script language="javascript" src="/files/theme/plugins.js"></script>
