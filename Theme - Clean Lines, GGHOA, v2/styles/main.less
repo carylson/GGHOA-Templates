@@ -428,6 +428,8 @@ body.no-header-page {
 
 body.slideshow-header-page {
 
+    /* Slider Info: https://editortricks.weebly.com/how-to-put-a-halfscreen-slider-on-the-homepage-of-your-weebly-site.html */
+
     #slider {
         background:#fff;
         position:relative;
@@ -461,7 +463,39 @@ body.slideshow-header-page {
     }
 
     #slider .wslide-content {
-        height: 50vh!important;
+        height: 50vh !important;
+    }
+
+    @media (max-width:992px) {
+
+        #slider {
+            height: 40vh;
+        }
+
+        #slider .wslide-slide-inner2 img {
+            height: 40vh;
+        }
+
+        #slider .wslide-content {
+            height: 40vh !important;
+        }
+
+    }
+
+    @media (max-width:767px) {
+
+        #slider {
+            height: 30vh;
+        }
+
+        #slider .wslide-slide-inner2 img {
+            height: 30vh;
+        }
+
+        #slider .wslide-content {
+            height: 30vh !important;
+        }
+
     }
 
 }
